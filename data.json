@@ -1,0 +1,63 @@
+{
+  "about": [
+    {
+      "title": "Front-End",
+      "description": "I’m a front-end developer from Vancouver, B.C. My passion is JavaScript, and I’m constantly learning new front-end technologies that enable me to build web applications with efficiency and organization. The challenge of learning something new excites me."
+    },
+    {
+      "title": "Back-End",
+      "description": "I’m aquainted with back-end technologies, and I have created custom CMS’s and CRUD applications. However, as I mentioned, JavaScript is my passion."
+    },
+    {
+      "title": "Design",
+      "description": "I have an appreciation for clean design that is communicative and simple to use. I understand that user experience is at the forefront of any application, and I’m constantly considering the user’s perspective during development. "
+    },
+    {
+      "title": "Interests",
+      "description": "I’m very dedicated to my work, but when I’m not sitting in front of a computer doing my thing, you’ll most likely find me enjoying the outdoors, listening to music, playing some sort of game, or trying something completely new."
+     }
+  ],
+
+  "works": [
+      {
+        "name": "board buddies",
+        "description": "Social application for finding people to play board games with",
+        "technology": [
+          "react", "redux", "webpack", "sass", "html5"
+        ],
+        "details": [
+          "This is a web application that connects individuals who are interested in playing board games, by enabling them to create and join board game events in their area. Our team of nine were all invested in making this idea a reality, as we felt that this was a need that our society was missing. As a member of the front-end developer team, I was tasked with creating an interface that was easy to use, efficient and reusable while in constant communication with the other members of the team."
+        ]
+      },
+      {
+        "name": "Exotic Typography",
+        "description": "72 Hour Website Project",
+        "technology": [
+          "css3", "php", "jquery", "html5"
+        ],
+        "details": [
+        "A school project website made for a mock typography studio. 48 hours to design and develop. Features a custom coded CMS. Fully responsive."
+        ]
+      },
+      {
+        "name": "Alexandra Hernandez",
+        "description": "A portfolio website for a Game Artist",
+        "technology": [
+          "webGL", "Unity", "JavaScript"
+        ],
+        "details": [
+          "A school project website made for a mock typography studio. 48 hours to design and devleop. Features a custom coded CMS. Fully responsive."
+        ]
+      },
+      {
+        "name": "VanArts Radio",
+        "description": "A website created for the promotion of the VanArts radio station",
+        "technology": [
+          "JavaScript", "Wordpress", "Bootstrap4", "SCSS", "PHP"
+        ],
+        "details": [
+          " A website created for the Broadcasting & Online Media program at VanArts to promote their radio station that is hosted at Mixlr. This website began as a school project, where I was tasked with creating a custom CMS. \n The program was previously using a Wordpress site and was interested in getting this site imported to Wordpress, so I was tasked with learning how to import a custom theme into Wordpress. "
+        ]
+      }
+    ]
+}
