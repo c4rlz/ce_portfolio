@@ -20,16 +20,19 @@
 
   "works": [
       {
-        "name": "board buddies",
+        "id": 0,
+        "name": "Board Buddies",
         "description": "Social application for finding people to play board games with",
         "technology": [
           "react", "redux", "webpack", "sass", "html5"
         ],
         "details": [
           "This is a web application that connects individuals who are interested in playing board games, by enabling them to create and join board game events in their area. Our team of nine were all invested in making this idea a reality, as we felt that this was a need that our society was missing. As a member of the front-end developer team, I was tasked with creating an interface that was easy to use, efficient and reusable while in constant communication with the other members of the team."
-        ]
+        ],
+        "url": "http://carlyewasiuk.com/et/index.php"
       },
       {
+        "id": 1,
         "name": "Exotic Typography",
         "description": "72 Hour Website Project",
         "technology": [
@@ -37,19 +40,23 @@
         ],
         "details": [
         "A school project website made for a mock typography studio. 48 hours to design and develop. Features a custom coded CMS. Fully responsive."
-        ]
+        ],
+        "url": "http://carlyewasiuk.com/et/index.php"
       },
       {
+        "id": 2,
         "name": "Alexandra Hernandez",
         "description": "A portfolio website for a Game Artist",
         "technology": [
           "webGL", "Unity", "JavaScript"
         ],
         "details": [
-          "A school project website made for a mock typography studio. 48 hours to design and devleop. Features a custom coded CMS. Fully responsive."
-        ]
+          "A school project website made for a mock typography studio. 48 hours to design and develop. Features a custom coded CMS. Fully responsive."
+        ],
+        "url": "http://carlyewasiuk.com/ah"
       },
       {
+        "id": 3,
         "name": "VanArts Radio",
         "description": "A website created for the promotion of the VanArts radio station",
         "technology": [
@@ -57,7 +64,8 @@
         ],
         "details": [
           " A website created for the Broadcasting & Online Media program at VanArts to promote their radio station that is hosted at Mixlr. This website began as a school project, where I was tasked with creating a custom CMS. \n The program was previously using a Wordpress site and was interested in getting this site imported to Wordpress, so I was tasked with learning how to import a custom theme into Wordpress. "
-        ]
+        ],
+        "url": "http://carlyewasiuk.com/vanarts_radio/"
       }
     ]
 }

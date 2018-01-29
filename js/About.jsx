@@ -1,6 +1,5 @@
 import React from 'react';
 import SkillDescription from './SkillDescription';
-import Nav from './Nav';
 
 const About = props => {
   // console.log(props.aboutData);
@@ -8,7 +7,6 @@ const About = props => {
   // Write the data in json and bring in?
   return (
     <main className="about-page">
-      <Nav />
       <section className="about-page-content">
 
         <div className="split">
@@ -18,6 +16,8 @@ const About = props => {
           </div>
         </div>
         <div className="split">
+          <h1> Hello there, </h1>
+          <h4> My name's Carly Ewasiuk </h4>
           {aboutData.map(item => (
             <SkillDescription
               key={item.title}

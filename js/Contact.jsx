@@ -1,9 +1,10 @@
 import React from 'react';
+import Heading from './Heading';
 
 const Contact = () => {
   return (
-    <div>
-      <h1>Contact</h1>
+    <div className="contact main-content">
+      <Heading heading="Contact Me" subheading="Let's collaborate!" />
     </div>
   );
 };

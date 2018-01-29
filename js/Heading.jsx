@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Home = props => {
+const Heading = props => {
   return (
     <div className="page-heading">
       <h1> {props.heading} </h1>
@@ -9,4 +9,4 @@ const Home = props => {
   );
 };
 
-export default Home;
+export default Heading;
