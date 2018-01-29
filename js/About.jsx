@@ -1,5 +1,6 @@
 import React from 'react';
 import SkillDescription from './SkillDescription';
+import eyeball from '../public/img/eyeball.jpg';
 
 const About = props => {
   // console.log(props.aboutData);
@@ -10,7 +11,9 @@ const About = props => {
       <section className="about-page-content">
 
         <div className="split">
-          <img src="" />
+          <div className='imageContainer'>
+            <img src={eyeball} />
+          </div>
           <div className="skills">
             <h2> My repertoire of code things </h2>
           </div>

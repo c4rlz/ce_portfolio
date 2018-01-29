@@ -70,12 +70,23 @@ p {
 
 .about-page-content {
   display: flex; }
+  .about-page-content .imageContainer {
+    margin-top: 3rem;
+    height: 70vh;
+    width: 90%; }
+    .about-page-content .imageContainer img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%; }
 
 .skill h4 {
   margin-bottom: 0; }
 
 .skill p {
   margin-top: 0; }
+
+.split {
+  margin-bottom: 0.7rem; }
 
 .top-nav {
   display: flex;
