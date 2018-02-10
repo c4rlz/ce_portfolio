@@ -5,12 +5,11 @@ import Heading from './Heading';
 import WorkItemMobile from './WorkItemMobile';
 import ProgressBar from './ProgressBar';
 
-
 class WorkLanding extends Component {
-  constructor(){
+  constructor() {
     super();
     this.onScroll = this.onScroll.bind(this);
-    this.changeComponent = debounce(500, this.changeComponent)
+    this.changeComponent = debounce(500, this.changeComponent);
   }
   state = {
     page: 0,
@@ -23,14 +22,11 @@ class WorkLanding extends Component {
     window.removeEventListener('wheel', this.onScroll, false);
   }
 
-
-  onScroll = (e) => {
+  onScroll = e => {
     console.log(e);
     if (e.deltaY < 0) {
       console.log('scrolling up');
       this.changeComponent('prev');
-
-
     }
     if (e.deltaY > 0) {
       console.log('scrolling down');
@@ -38,16 +34,19 @@ class WorkLanding extends Component {
     }
   };
 
-
-  changeComponent(change){
+  changeComponent(change) {
     const currentPage = this.state.page;
     const numberOfPages = this.state.numberOfPages;
-    console.log(currentPage, numberOfPages)
-    switch(change){
-      case "prev":
-        return currentPage !== 0 ? this.setState({page: (currentPage - 1)}) : this.setState({page: numberOfPages })
+    console.log(currentPage, numberOfPages);
+    switch (change) {
+      case 'prev':
+        return currentPage !== 0
+          ? this.setState({ page: currentPage - 1 })
+          : this.setState({ page: numberOfPages });
       default:
-      return currentPage !== numberOfPages ? this.setState({page: (currentPage + 1)}) : this.setState({page: 0 })
+        return currentPage !== numberOfPages
+          ? this.setState({ page: currentPage + 1 })
+          : this.setState({ page: 0 });
     }
 
     // if (currentPage == 0){
@@ -61,9 +60,11 @@ class WorkLanding extends Component {
   renderWorkItem = (works, i) => {
     const work = works[i];
     return (
-      <Link to={`/work-details/${i}`}
-      style={{ textDecoration: 'none' }}
-      key={work.id}>
+      <Link
+        to={`/work-details/${i}`}
+        style={{ textDecoration: 'none' }}
+        key={work.id}
+      >
         <div className={`main-content work-${work.id}`}>
           <Heading heading={work.name} subheading={work.description} />
           <WorkItemMobile />
