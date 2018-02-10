@@ -57,16 +57,20 @@ p {
 .page-heading {
   height: 100%;
   position: relative;
-  padding: 5rem 0 0 1.4rem;
+  padding: 2rem;
   color: #FFFFFF;
   z-index: 2; }
 
 .page-heading h1, .work-page-heading h1 {
   text-transform: uppercase;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  font-size: 2.5rem;
+  font-size: 3rem; }
 
 .page-heading h4, .work-page-heading h4 {
-  margin-top: 0.5rem; }
+  margin: 1.4rem 0;
+  font-size: 1.4rem;
+  line-height: 1.8rem; }
 
 .about-page-content {
   display: flex; }
@@ -109,7 +113,7 @@ p {
     color: #262626; }
 
 .mobile-display-right {
-  height: 400px;
+  height: 550px;
   position: absolute;
   top: 120px;
   right: 25px; }
@@ -171,11 +175,14 @@ p {
     padding: 1.4rem;
     background: #FFFFFF; }
   .page-heading {
-    padding: 5rem 0 0 5rem; }
+    padding: 2rem; }
   .top-nav {
     margin-bottom: 1.4rem; } }
 
 @media screen and (min-width: 768px) {
   .mobile-display-right {
     top: 150px;
-    right: 150px; } }
+    right: 150px; }
+  .page-heading {
+    width: 50%;
+    padding: 5rem 0 0 8rem; } }
