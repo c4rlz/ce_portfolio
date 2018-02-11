@@ -29,6 +29,9 @@
         "details": [
           "This is a web application that connects individuals who are interested in playing board games, by enabling them to create and join board game events in their area. Our team of nine were all invested in making this idea a reality, as we felt that this was a need that our society was missing. As a member of the front-end developer team, I was tasked with creating an interface that was easy to use, efficient and reusable while in constant communication with the other members of the team."
         ],
+        "functionality": [
+          "Filter event based on location, date and keywords. Post to a comment section. Create events. Join events."
+        ],
         "url": "http://carlyewasiuk.com/et/index.php"
       },
       {
@@ -41,6 +44,10 @@
         "details": [
         "A school project website made for a mock typography studio. 48 hours to design and develop. Features a custom coded CMS. Fully responsive."
         ],
+        "functionality": [
+          "Compare typography styles 'Test Drive'. Custom CMS. Image slider. Customized map."
+        ],
+
         "url": "http://carlyewasiuk.com/et/index.php"
       },
       {
@@ -53,8 +60,12 @@
         "details": [
           "A school project website made for a mock typography studio. 48 hours to design and develop. Features a custom coded CMS. Fully responsive."
         ],
+        "functionality": [
+         "Customizable site using wordpress"
+        ],
         "url": "http://carlyewasiuk.com/ah"
       },
+
       {
         "id": 3,
         "name": "VanArts Radio",
@@ -65,6 +76,9 @@
         "details": [
           " A website created for the Broadcasting & Online Media program at VanArts to promote their radio station that is hosted at Mixlr. This website began as a school project, where I was tasked with creating a custom CMS. \n The program was previously using a Wordpress site and was interested in getting this site imported to Wordpress, so I was tasked with learning how to import a custom theme into Wordpress. "
         ],
+        "functionality": [
+          "Access to Mixlr radio station. Animations for loading. Customized backend."
+         ],
         "url": "http://carlyewasiuk.com/vanarts_radio/"
       }
     ]
