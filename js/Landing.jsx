@@ -6,14 +6,16 @@ import Heading from './Heading';
 
 const Landing = () => {
   const description =
-    "I enjoy all things JavaScript. I'm constantly learning new things and questioning everything. I am a problem solver and I have a knack for finding bugs.";
+    'I`m crazy about JavaScript. I have a thirst for knowledge and growth. A creative & innovative mind. I seem to have a knack for finding bugs.';
   return (
     <div className="main-content landing">
-      <Heading
-        heading="Carly Ewasiuk"
-        subheading="Front-End Developer & UX Enthusiast"
-        description={description}
-      />
+      <div className="heading-description">
+        <Heading
+          heading="Carly Ewasiuk"
+          subheading="Front-End Developer & UX Enthusiast"
+          description={description}
+        />
+      </div>
     </div>
   );
 };

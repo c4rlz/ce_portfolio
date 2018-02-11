@@ -18,14 +18,23 @@ const WorkDetails = props => {
             <i className="fas fa-arrow-alt-circle-left" />
           </Link>
           <h1> {selectedWork.name} </h1>
-          <h4> {selectedWork.description} </h4>
+          {/* <h4> {selectedWork.description} </h4> */}
         </div>
 
         <div>
           <WorkItemDesktop projectName={selectedWork.name} />
         </div>
         <TechnologiesUsed technology={selectedWork.technology} />
-        <WorkDescription description={selectedWork.details} />
+        <WorkDescription
+          title="Description"
+          description={selectedWork.details}
+        />
+        <WorkDescription title="My Role" description={selectedWork.role} />
+        <WorkDescription
+          title="Functionality"
+          description={selectedWork.functionality}
+        />
+
         <WebsiteLink link={selectedWork.url} />
       </div>
     </section>

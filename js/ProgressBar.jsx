@@ -20,7 +20,7 @@ class ProgressBar extends Component {
 
   render() {
     return (
-      <div className="progressBar">
+      <div className="progress-bar">
         <div className="progress">
           {this.state.userProgress}
 

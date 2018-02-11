@@ -9,11 +9,11 @@ class WorkLanding extends Component {
   constructor() {
     super();
     this.onScroll = this.onScroll.bind(this);
-    this.changeComponent = debounce(500, this.changeComponent);
+    this.changeComponent = debounce(100, this.changeComponent);
   }
   state = {
-    page: 0,
-    numberOfPages: 3
+    currentPage: 0,
+    lastPageIndex: 3
   };
   componentDidMount() {
     window.addEventListener('wheel', this.onScroll, false);
@@ -35,18 +35,16 @@ class WorkLanding extends Component {
   };
 
   changeComponent(change) {
-    const currentPage = this.state.page;
-    const numberOfPages = this.state.numberOfPages;
-    console.log(currentPage, numberOfPages);
+    const { currentPage, lastPageIndex } = this.state;
     switch (change) {
       case 'prev':
         return currentPage !== 0
-          ? this.setState({ page: currentPage - 1 })
-          : this.setState({ page: numberOfPages });
+          ? this.setState({ currentPage: currentPage - 1 })
+          : this.setState({ currentPage: lastPageIndex });
       default:
-        return currentPage !== numberOfPages
-          ? this.setState({ page: currentPage + 1 })
-          : this.setState({ page: 0 });
+        return currentPage !== lastPageIndex
+          ? this.setState({ currentPage: currentPage + 1 })
+          : this.setState({ currentPage: 0 });
     }
 
     // if (currentPage == 0){
@@ -92,12 +90,12 @@ class WorkLanding extends Component {
   render() {
     const { workData } = this.props;
     // console.log(workData);
-    const { page } = this.state;
+    const { currentPage, lastPageIndex } = this.state;
     return (
       <div>
         {/* {this.renderWorkItems(workData)} */}
-        {this.renderWorkItem(workData, page)}
-        <ProgressBar />
+        {this.renderWorkItem(workData, currentPage)}
+        <ProgressBar page={currentPage} lastPageIndex={lastPageIndex} />
       </div>
     );
   }
