@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../public/img/ce-logo.png';
+// import logo from '';
+const logo = require('../public/img/ce-logo.png');
 
 const Nav = props => {
   return (

@@ -11,14 +11,33 @@
   background: url('../public/img/peacock.jpg') no-repeat
   background-size: cover
   height: 80vh
-
-.page-heading
+  .page-heading
+    top: 0
+  
+.gradient-overlay  
+  width: 100%
   height: 100%
+  background: -moz-linear-gradient(top, rgba($dusty-pink,1) 0%, rgba($dusty-pink,0.7) 48%, rgba($dusty-pink,0) 100%)
+  background: -webkit-linear-gradient(top, rgba($dusty-pink,1) 0%,rgba($dusty-pink,0.7) 48%,rgba($dusty-pink,0) 100%)
+  background: linear-gradient(to bottom, rgba($dusty-pink,1) 0%,rgba($dusty-pink,0.7) 48%,rgba($dusty-pink,0) 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#574a86', endColorstr='#00574a86',GradientType=0 )
+.page-heading
+  // height: 100%
+  width: 90%;
   position: relative
   padding: 2rem;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#574a86+0,574a86+48,574a86+100&1+0,0.7+48,0+100 */
+  // background: -moz-linear-gradient(top, rgba($dusty-pink,1) 0%, rgba($dusty-pink,0.7) 48%, rgba($dusty-pink,0) 100%)
+  // background: -webkit-linear-gradient(top, rgba($dusty-pink,1) 0%,rgba($dusty-pink,0.7) 48%,rgba($dusty-pink,0) 100%)
+  // background: linear-gradient(to bottom, rgba($dusty-pink,1) 0%,rgba($dusty-pink,0.7) 48%,rgba($dusty-pink,0) 100%)
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#574a86', endColorstr='#00574a86',GradientType=0 )
+  // top: 2rem
+  // left: 2rem
   // padding: $large 0 0 $small
   color: $white
   z-index: 2
+  p 
+    max-width: 500px
 
 .page-heading,
 .work-page-heading
@@ -26,11 +45,12 @@
     text-transform: uppercase
     margin-bottom: 0
     margin-top: $small
-    font-size: $medium
-    font-size: 3rem
+    font-size: 2rem
   h4
     margin: $small 0
     font-size: $small
     line-height: 1.8rem;
 
 
+.page-heading
+  top: 5rem

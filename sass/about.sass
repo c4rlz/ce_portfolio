@@ -1,5 +1,6 @@
 .about-page-content 
   display: flex
+  flex-direction: column
   color: $white
    margin-bottom: 0.7rem;
   h1
@@ -19,11 +20,14 @@
 .skill
   h4
     margin-bottom: 0
+    @extend .uppercase
   p
     margin-top: 0
 
 .split
-  padding: $medium
+  padding: 2rem
+  background: rgba($dusty-pink, 0.6)
+  
   // margin-bottom: 0.7rem;
   // h1
   //   margin-bottom: 0
@@ -31,7 +35,14 @@
   // background-size: cover
 
 .right 
+  background: rgba($purple, 0.5)
   text-align: right
-  margin-top: 8.5rem
-  width: 60%
-  
+  order: 1
+  h1
+    margin: 0
+    
+
+.colour-container 
+  background: rgba($dusty-pink, 0.5)
+  &.1
+    background: rgba($purple, 0.5)

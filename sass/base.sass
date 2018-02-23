@@ -1,5 +1,6 @@
 *
   box-sizing: border-box
+  transition: all .4s ease-in-out
 
 h1, h2, h4
   font-family: $heading-op2
@@ -10,6 +11,28 @@ h1
 p 
   font-family: $body
   line-height: $small
+
+
+@mixin transition($in) 
+  transition: $in
+  -webkit-transition: $in
+  -moz-transition: $in
+  -o-transition: $in
+  -ms-transition: $in
+
+@mixin transform($in) 
+	transform: $in
+	-webkit-transform: $in
+	-moz-transform: $in
+	-o-transform: $in
+	-ms-transform: $in
+
+@mixin animation($in) 
+	animation: $in
+	-webkit-animation: $in
+	-moz-animation: $in
+	-o-animation: $in
+	-ms-animation: $in
 
 .top-nav
   position: relative
@@ -26,4 +49,38 @@ p
   text-transform: uppercase
 
 .logo 
-  width: 50%
+  width: 70px
+
+
+.line
+  width: 5%
+  border-bottom: 2px solid black
+
+.btn-container 
+  margin-top: 2.4rem
+
+.btn-interior
+  height: 100%
+  background: black
+  
+  
+.btn-white
+  text-decoration: none
+  font-family: $heading-op2
+  padding: 1rem 2rem
+  border: 2px solid white
+  color: white
+  text-transform: uppercase
+  &:hover
+    background: rgba($black, 0.5)
+    color: white
+
+  &.home
+    margin: 2rem
+    
+
+
+  
+
+
+

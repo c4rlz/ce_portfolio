@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  transition: all .4s ease-in-out; }
 
 h1, h2, h4 {
   font-family: "Josefin Sans", sans-serif; }
@@ -22,11 +23,35 @@ p {
 .center-align {
   text-align: center; }
 
-.uppercase {
+.uppercase, .skill h4 {
   text-transform: uppercase; }
 
 .logo {
-  width: 50%; }
+  width: 70px; }
+
+.line {
+  width: 5%;
+  border-bottom: 2px solid black; }
+
+.btn-container {
+  margin-top: 2.4rem; }
+
+.btn-interior {
+  height: 100%;
+  background: black; }
+
+.btn-white {
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 1rem 2rem;
+  border: 2px solid white;
+  color: white;
+  text-transform: uppercase; }
+  .btn-white:hover {
+    background: rgba(38, 38, 38, 0.5);
+    color: white; }
+  .btn-white.home {
+    margin: 2rem; }
 
 .fade-appear,
 .fade-enter {
@@ -56,21 +81,33 @@ p {
   background: url(/63d7f9ac7c63e8fb97ca2037526cfde5.jpg) no-repeat;
   background-size: cover;
   height: 80vh; }
+  .landing .page-heading {
+    top: 0; }
+
+.gradient-overlay {
+  width: 100%;
+  height: 100%;
+  background: -moz-linear-gradient(top, #c660b5 0%, rgba(198, 96, 181, 0.7) 48%, rgba(198, 96, 181, 0) 100%);
+  background: -webkit-linear-gradient(top, #c660b5 0%, rgba(198, 96, 181, 0.7) 48%, rgba(198, 96, 181, 0) 100%);
+  background: linear-gradient(to bottom, #c660b5 0%, rgba(198, 96, 181, 0.7) 48%, rgba(198, 96, 181, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#574a86', endColorstr='#00574a86',GradientType=0 ); }
 
 .page-heading {
-  height: 100%;
+  width: 90%;
   position: relative;
   padding: 2rem;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#574a86+0,574a86+48,574a86+100&1+0,0.7+48,0+100 */
   color: #FFFFFF;
   z-index: 2; }
+  .page-heading p {
+    max-width: 500px; }
 
 .page-heading h1,
 .work-page-heading h1 {
   text-transform: uppercase;
   margin-bottom: 0;
   margin-top: 1.4rem;
-  font-size: 2.5rem;
-  font-size: 3rem; }
+  font-size: 2rem; }
 
 .page-heading h4,
 .work-page-heading h4 {
@@ -78,8 +115,12 @@ p {
   font-size: 1.4rem;
   line-height: 1.8rem; }
 
+.page-heading {
+  top: 5rem; }
+
 .about-page-content {
   display: flex;
+  flex-direction: column;
   color: #FFFFFF;
     color-margin-bottom: 0.7rem;
   background: url(/3281322ccb35e1ecb159fdcc8ffb769e.jpg) no-repeat;
@@ -101,12 +142,20 @@ p {
   margin-top: 0; }
 
 .split {
-  padding: 2.5rem; }
+  padding: 2rem;
+  background: rgba(198, 96, 181, 0.6); }
 
 .right {
+  background: rgba(87, 74, 134, 0.5);
   text-align: right;
-  margin-top: 8.5rem;
-  width: 60%; }
+  order: 1; }
+  .right h1 {
+    margin: 0; }
+
+.colour-container {
+  background: rgba(198, 96, 181, 0.5); }
+  .colour-container.1 {
+    background: rgba(87, 74, 134, 0.5); }
 
 .top-nav {
   display: flex;
@@ -132,26 +181,57 @@ p {
 .mobile-display-right {
   height: 450px;
   position: absolute;
-  top: 65px;
+  top: 130px;
   right: 25px; }
 
-.work-0 {
+.main-content {
+  border: 1px solid #262626; }
+
+.work-0.main-content,
+.work-0 .work-details-header {
   background: #7CCE8E; }
 
-.work-1 {
+.work-0 .line {
+  border-color: #7CCE8E; }
+
+.work-0 .website-link {
+  color: #7CCE8E; }
+
+.work-1.main-content,
+.work-1 .work-details-header {
   background: #574A86; }
 
-.work-2 {
+.work-1 .line {
+  border-color: #574A86; }
+
+.work-1 .website-link {
+  color: #574A86; }
+
+.work-2.main-content,
+.work-2 .work-details-header {
   background: #5E9DBA; }
 
-.work-3 {
-  background: #CF43AE; }
+.work-2 .line {
+  border-color: #5E9DBA; }
+
+.work-2 .website-link {
+  color: #5E9DBA; }
+
+.work-3.main-content,
+.work-3 .work-details-header {
+  background: #C660B5; }
+
+.work-3 .line {
+  border-color: #C660B5; }
+
+.work-3 .website-link {
+  color: #C660B5; }
 
 .work-details-header {
   position: absolute;
   top: 0;
   left: 0;
-  height: 370px;
+  height: 250px;
   width: 100vw; }
 
 .work-page-heading {
@@ -159,7 +239,6 @@ p {
   z-index: 2;
   color: #FFFFFF; }
   .work-page-heading h1 {
-    font-size: 5rem;
     margin-bottom: 1.8rem; }
 
 .desktop-display {
@@ -178,21 +257,56 @@ p {
   width: 50px; }
 
 .website-link {
-  color: #262626;
+  margin-top: 2.5rem;
+  color: white;
+  font-family: "Muli", sans-serif;
+  font-size: 1.4rem;
+  padding: 0.5rem 1.4rem;
   text-transform: uppercase;
-  text-decoration: none; }
-
-.back-button {
-  position: fixed;
-  top: 50%;
-  left: -10%; }
+  text-decoration: none;
+  background: #262626;
+  color: #FFFFFF; }
 
 .progress-bar {
   background: #262626;
   padding: 10px; }
 
+.back-button {
+  display: none; }
+
+.content-work .btn-white {
+  position: relative;
+  top: 4rem;
+  margin-left: 2rem;
+  z-index: 4; }
+
+.project-navigation {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  display: flex;
+  flex-direction: column; }
+  .project-navigation i {
+    color: #262626; }
+  .project-navigation button {
+    border: none;
+    width: 20px;
+    outline: none;
+    background: none; }
+
 .contact {
-  background: #CF43AE; }
+  background: #C660B5; }
+  .contact.main-content {
+    height: 80vh; }
+  .contact .page-heading h1 {
+    font-size: 5.7rem;
+    margin-top: -2rem; }
+  .contact .page-heading h4 {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem; }
+  .contact .fa-envelope {
+    margin-right: 0.5rem; }
 
 @media screen and (min-width: 414px) {
   #app {
@@ -200,6 +314,10 @@ p {
     background: #FFFFFF; }
   .page-heading {
     padding: 2rem; }
+  .work-page-heading h1 {
+    font-size: 2.5rem; }
+  .work-details-header {
+    height: 370px; }
   .mobile-display-right {
     top: 150px;
     right: 150px; }
@@ -207,13 +325,35 @@ p {
     margin-bottom: 1.4rem; }
   .content-width {
     width: 75%; }
+  .contact .page-heading h1 {
+    font-size: 8.7rem; }
   .logo {
     width: 30%; } }
 
 @media screen and (min-width: 768px) {
+  .back-button {
+    display: static;
+    position: fixed;
+    font-size: 2.5rem;
+    color: #262626; }
+  .about-page-content {
+    flex-direction: row; }
+  .right {
+    padding-top: 9.3rem;
+    width: 60%;
+    order: 0; }
+    .right h1 {
+      display: none; }
   .mobile-display-right {
-    top: 150px;
+    top: 170px;
     right: 150px; }
+  .work-page-heading h1 {
+    font-size: 4rem; }
   .page-heading {
-    width: 50%;
-    padding: 5rem 0 0 8rem; } }
+    width: 50%; } }
+
+@media screen and (min-width: 1024px) {
+  .left {
+    padding: 2.5rem; }
+  .right {
+    padding-right: 2.5rem; } }

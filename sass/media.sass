@@ -3,8 +3,17 @@
     padding: $small
     background: $white
 
+
+
   .page-heading 
-    padding: 2rem;
+    padding: 2rem
+    
+  .work-page-heading  
+    h1
+      font-size: $medium
+
+  .work-details-header
+    height: 370px
 
   .mobile-display-right 
     top: 150px
@@ -16,20 +25,48 @@
   .content-width 
     width: 75%
   
+  .contact
+    .page-heading h1
+      font-size: 8.7rem
+      
   .logo 
-    width: 30%;
+    width: 30%
 @media screen and (min-width: 768px)
+
+  .back-button
+    display: static
+    position: fixed
+    font-size: $medium
+    color: $black
+
+
+  .about-page-content
+    flex-direction: row
+
+  .right
+    padding-top: 9.3rem
+    width: 60%
+    order: 0
+    h1
+      display: none
+
   .mobile-display-right 
-    top: 150px
+    top: 170px
     right: 150px
   // .split 
   //   width: 50%
+  .work-page-heading h1
+    font-size: 4rem
 
   .page-heading 
     width: 50%
-    padding: $large 0 0 $x-large
+    // padding: $large 0 0 $x-large
 
-// @media screen and (min-width: 1024px)
+@media screen and (min-width: 1024px)
+  .left
+    padding: $medium
+  .right
+    padding-right: $medium
 
 // @media screen and (min-width: 1440px)
 

@@ -1,7 +1,7 @@
 .mobile-display-right
   height: 450px
   position: absolute
-  top: 65px
+  top: 130px
   right: 25px
 
 
@@ -9,24 +9,49 @@
     // position: absolute;
     // top: 5px;
     // right: 25px;
-
+.main-content
+  border: 1px solid $black
 .work-0
-  background: $green
+  &.main-content,
+  .work-details-header
+    background: $green
+  .line 
+    border-color: $green
+  .website-link
+    color: $green
 
 .work-1
-  background: $purple
+  &.main-content,
+  .work-details-header
+    background: $purple
+  .line 
+    border-color: $purple
+  .website-link
+    color: $purple
 
 .work-2
-  background: $blue
+  &.main-content,
+  .work-details-header
+    background: $blue
+  .line 
+    border-color: $blue
+  .website-link
+    color: $blue
 
 .work-3
-  background: $dusty-pink
+  &.main-content,
+  .work-details-header
+    background: $dusty-pink
+  .line 
+    border-color: $dusty-pink
+  .website-link
+    color: $dusty-pink
 
 .work-details-header 
   position: absolute
   top: 0
   left: 0 
-  height: 370px
+  height: 250px
   width: 100vw
 
 .work-page-heading
@@ -34,7 +59,7 @@
   z-index: 2
   color: $white
   h1
-    font-size: 5rem
+    // font-size: 5rem
     margin-bottom: 1.8rem
 
 .desktop-display 
@@ -53,15 +78,47 @@
   width: 50px
 
 .website-link
-  color: $black
+  margin-top: $medium
+  color: white
+  font-family: $heading
+  font-size: $small
+  padding: $x-small $small
   text-transform: uppercase
   text-decoration: none
+  background: $black
+  // border: 2px solid $black
+  color: $white
 
-.back-button
-  position: fixed
-  top: 50%
-  left: -10%
+  // z-index: 20
+  // left: -100px
+  // left: -10%
 
 .progress-bar
   background: $black
   padding: 10px
+
+.back-button
+  display: none
+
+.content-work 
+  .btn-white
+    position: relative
+    top: 4rem
+    margin-left: 2rem 
+    z-index: 4
+
+.project-navigation
+  // width: 50px
+  position: fixed
+  top: 50%
+  right: 10px
+  display: flex
+  flex-direction: column
+  i
+    color: $black
+  button
+    border: none
+    width: 20px
+    outline: none
+    background: none
+  

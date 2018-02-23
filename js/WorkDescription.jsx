@@ -11,7 +11,9 @@ const WorkDescription = props => {
   return (
     <div className="work-description">
       <h4 className="uppercase">{props.title}</h4>
+
       <p> {props.description} </p>
+      <div className="line" />
     </div>
   );
 };

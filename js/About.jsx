@@ -10,13 +10,8 @@ const About = props => {
   return (
     <main className="about-page">
       <section className="about-page-content">
-
-        {/* <div className="split">
-          <div className="imageContainer">
-            <img src={eyeball} />
-          </div>
-        </div> */}
         <div className="split right">
+          <h1> Skills </h1>
           <SkillDescription
             title={<hr />}
             description="Javascript, React, Webpack, HTML5, SASS, Bootstrap"
@@ -29,8 +24,16 @@ const About = props => {
             title={<hr />}
             description="UX & UI Design, Typography, Fluid Design, Print Media"
           />
+          <div className="btn-container">
+            <a
+              href="https://drive.google.com/file/d/1oRmpsCeApCrCArzsuB_oxTocrw6WQFwQ/view?usp=sharing"
+              className="btn-white"
+            >
+              <span className="btn-interior" /> View Resume
+            </a>
+          </div>
         </div>
-        <div className="split">
+        <div className="split left">
 
           <h1> Hello there! </h1>
           <h4> My name's Carly Ewasiuk </h4>
@@ -41,9 +44,6 @@ const About = props => {
               description={item.description}
             />
           ))}
-
-          {/* <img src={stack} alt="My current stack" /> */}
-
         </div>
 
       </section>

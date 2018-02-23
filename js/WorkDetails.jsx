@@ -10,15 +10,14 @@ const WorkDetails = props => {
   console.log(selectedWork);
 
   return (
-    <section>
-      <div className={`work-details-header work-${selectedWork.id}`} />
+    <section className={`work-${selectedWork.id}`}>
+      <div className={`work-details-header`} />
       <div className="content-width">
         <div className="work-page-heading">
           <Link className="back-button" to="/work">
-            <i className="fas fa-arrow-alt-circle-left" />
+            <i className="fa fa-arrow-alt-circle-left" />
           </Link>
           <h1> {selectedWork.name} </h1>
-          {/* <h4> {selectedWork.description} </h4> */}
         </div>
 
         <div>

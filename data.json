@@ -6,7 +6,7 @@
     },
     {
       "title": "Back-End",
-      "description": "I’m aquainted with back-end technologies, and I have created custom CMS’s and CRUD applications. However, as I mentioned, JavaScript is my passion."
+      "description": "I’m aquainted with back-end technologies, such as PHP, Laravel, MySQL. I have created custom CMS’s and CRUD applications. I am currently undertaking the learning of employing JavaScript for backend development."
     },
     {
       "title": "Design",
@@ -80,7 +80,7 @@
         "name": "VanArts Radio",
         "description": "A website created for the promotion of the VanArts radio station",
         "technology": [
-          "JavaScript", "Wordpress", "Bootstrap4", "SCSS", "PHP"
+          "JavaScript", "Wordpress", "Bootstrap4", "Sass", "PHP"
         ],
         "details": [
           " A website created for the Broadcasting & Online Media program at VanArts to promote their radio station that is hosted at Mixlr. This website began as a school project, where I was tasked with creating a custom CMS. \n The program was previously using a Wordpress site and was interested in getting this site imported to Wordpress, so I was tasked with learning how to import a custom theme into Wordpress. "
