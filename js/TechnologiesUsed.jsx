@@ -4,7 +4,7 @@ import React from 'react';
 const TechnologiesUsed = props => {
   const showTechnologies = technologyArray => {
     const technologies = technologyArray.map(technology => {
-      const imageUrl = `../public/img/${technology.toLowerCase()}-logo.png`;
+      const imageUrl = require(`../public/img/${technology.toLowerCase()}-logo.png`);
       return (
         <div className="technology-item" key={technology}>
           <img
