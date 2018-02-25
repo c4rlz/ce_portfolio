@@ -54,7 +54,7 @@
           "Compare typography styles. Custom CMS made from scratch Image slider. Customized map."
         ],
 
-        "url": "http://carlyewasiuk.com/et/index.php"
+        "url": "http://carlyewasiuk.com/exotic/index.php"
       },
       {
         "id": 2,
@@ -92,6 +92,44 @@
           "Access to Mixlr radio station. Animations for loading. Customized backend. Refactor into wordpress theme."
          ],
         "url": "http://carlyewasiuk.com/vanarts_radio/"
+      },
+      {
+        "id": 4,
+        "name": "VanArts Radio",
+        "description": "A website created for the promotion of the VanArts radio station",
+        "technology": [
+          "JavaScript", "Wordpress", "Bootstrap4", "Sass", "PHP"
+        ],
+        "details": [
+          " A website created for the Broadcasting & Online Media program at VanArts to promote their radio station that is hosted at Mixlr. This website began as a school project, where I was tasked with creating a custom CMS. \n The program was previously using a Wordpress site and was interested in getting this site imported to Wordpress, so I was tasked with learning how to import a custom theme into Wordpress. "
+        ],
+        "role": [
+          "Research competitor radio stations in the local area. Design and develop website that adheres to client's goals."
+        ],
+        "functionality": [
+          "Access to Mixlr radio station. Animations for loading. Customized backend. Refactor into wordpress theme."
+         ],
+        "url": "http://carlyewasiuk.com/vanarts_radio/"
+      },
+      {
+        "id": 5,
+        "name": "VanArts Radio",
+        "description": "A website created for the promotion of the VanArts radio station",
+        "technology": [
+          "JavaScript", "Wordpress", "Bootstrap4", "Sass", "PHP"
+        ],
+        "details": [
+          " A website created for the Broadcasting & Online Media program at VanArts to promote their radio station that is hosted at Mixlr. This website began as a school project, where I was tasked with creating a custom CMS. \n The program was previously using a Wordpress site and was interested in getting this site imported to Wordpress, so I was tasked with learning how to import a custom theme into Wordpress. "
+        ],
+        "role": [
+          "Research competitor radio stations in the local area. Design and develop website that adheres to client's goals."
+        ],
+        "functionality": [
+          "Access to Mixlr radio station. Animations for loading. Customized backend. Refactor into wordpress theme."
+         ],
+        "url": "http://carlyewasiuk.com/vanarts_radio/"
       }
+
+
     ]
 }
