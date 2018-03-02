@@ -1,13 +1,19 @@
 import React from 'react';
-import desktop from '../public/img/macbook.png';
+import desktop from '../public/img/macbookpro.png';
 
 const WorkItemDesktop = props => {
   return (
-    <img
-      className="desktop-display"
-      src={desktop}
-      alt={`Desktop version of ${props.projectName}`}
-    />
+    <div className="desktop-display">
+      <img
+        className="desktop"
+        src={desktop}
+        alt={`Desktop version of ${props.projectName}`}
+      />
+      <img
+        className="desktop-screen"
+        src={require(`../public/img/${props.screen}`)}
+      />
+    </div>
   );
 };
 
