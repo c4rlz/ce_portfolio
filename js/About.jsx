@@ -1,12 +1,7 @@
 import React from 'react';
 import SkillDescription from './SkillDescription';
-// import eyeball from '../public/img/eyeball-new.jpg';
-import stack from '../public/img/stack.png';
-
-const About = props => {
-  // console.log(props.aboutData);
-  const { aboutData } = props;
-  // Write the data in json and bring in?
+const About = ({ aboutData }) => {
+  // const { aboutData } = props;
   return (
     <main className="about-page">
       <section className="about-page-content">
