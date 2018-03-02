@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class ProgressBar extends Component {
   state = {
-    userProgress: 0
+    userProgress: ''
   };
   // props: {
   //   page: 0,

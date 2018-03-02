@@ -7,8 +7,6 @@ import WebsiteLink from './WebsiteLink';
 
 const WorkDetails = props => {
   const { selectedWork } = props;
-  console.log(selectedWork);
-
   return (
     <section className={`work-${selectedWork.id}`}>
       <div className={`work-details-header`} />
@@ -21,7 +19,10 @@ const WorkDetails = props => {
         </div>
 
         <div>
-          <WorkItemDesktop projectName={selectedWork.name} />
+          <WorkItemDesktop
+            projectName={selectedWork.name}
+            screen={selectedWork.images[1]}
+          />
         </div>
         <TechnologiesUsed technology={selectedWork.technology} />
         <WorkDescription

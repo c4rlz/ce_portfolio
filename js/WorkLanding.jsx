@@ -16,7 +16,7 @@ class WorkLanding extends Component {
   }
   state = {
     currentPage: 0,
-    lastPageIndex: 3
+    lastPageIndex: 5
   };
   componentDidMount() {
     window.addEventListener('wheel', this.onScroll, false);
@@ -26,13 +26,10 @@ class WorkLanding extends Component {
   }
 
   onScroll = e => {
-    console.log(e);
     if (e.deltaY < 0) {
-      // console.log('scrolling up');
       this.changeComponent('prev');
     }
     if (e.deltaY > 0) {
-      // console.log('scrolling down');
       this.changeComponent('next');
     }
   };
@@ -42,11 +39,9 @@ class WorkLanding extends Component {
     switch (keyCode) {
       // left
       case 37:
-        console.log('prev');
         this.changeComponent('prev');
         break;
       case 39:
-        console.log('next');
         this.changeComponent('next');
         break;
       default:
@@ -56,7 +51,6 @@ class WorkLanding extends Component {
 
   changeComponent(change) {
     const { currentPage, lastPageIndex } = this.state;
-    console.log('change', change);
     switch (change) {
       case 'prev':
         return currentPage !== 0
@@ -76,23 +70,24 @@ class WorkLanding extends Component {
     const work = works[i];
     return (
       <div className={`main-content content-work work-${work.id}`}>
-        <Heading heading={work.name} subheading={work.description} />
-        <Link
-          to={`/work-details/${i}`}
-          className="btn-white"
-          style={{ textDecoration: 'none' }}
-          key={work.id}
-        >
-          More Details
-        </Link>
-        <WorkItemMobile />
+        <section className="work-item-heading">
+          <Heading heading={work.name} subheading={work.description} />
+          <Link
+            // to={`/work-details/${i}`}
+            to={`/work/${i}`}
+            className="btn-white"
+            style={{ textDecoration: 'none' }}
+            key={work.id}
+          >
+            More Details
+          </Link>
+        </section>
+        <WorkItemMobile title={work.name} screen={work.images[0]} />
       </div>
     );
   };
   render() {
-    console.log(this.state, this.props);
     const { workData } = this.props;
-    // console.log(workData);
     const { currentPage, lastPageIndex } = this.state;
 
     return (

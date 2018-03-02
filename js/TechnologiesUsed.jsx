@@ -22,7 +22,6 @@ const TechnologiesUsed = props => {
     <div className="technology-section">
       <div className="line" />
       <h4 className="uppercase">Technology</h4>
-      {/* <div className="line" /> */}
       {showTechnologies(props.technology)}
       <div className="line" />
     </div>

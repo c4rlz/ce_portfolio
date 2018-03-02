@@ -1,13 +1,15 @@
 import React from 'react';
-import iphone from '../public/img/iphone-black.png';
+import iphone from '../public/img/iphone9.png';
 
-const WorkItem = props => {
+const WorkItem = ({ screen, title }) => {
   return (
-    <img
-      className="mobile-display-right"
-      src={iphone}
-      alt="Work displayed on an iphone"
-    />
+    <div className="mobile-display">
+      <img
+        className="mobile-screen"
+        src={require(`../public/img/${screen}`)}
+        alt={title}
+      />
+    </div>
   );
 };
 
