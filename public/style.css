@@ -112,11 +112,8 @@ p {
 .page-heading h4,
 .work-page-heading h4 {
   margin: 1.4rem 0;
-  font-size: 1.4rem;
+  font-size: 1rem;
   line-height: 1.8rem; }
-
-.page-heading {
-  top: 5rem; }
 
 .about-page-content {
   display: flex;
@@ -179,32 +176,57 @@ p {
     color: #262626; }
 
 .mobile-display-right {
-  height: 450px;
+  height: 50%;
   position: absolute;
-  top: 130px;
-  right: 25px; }
+  top: 6%;
+  right: 7%; }
+
+.work-item-heading {
+  background: rgba(38, 38, 38, 0.5);
+  position: relative;
+  z-index: 10;
+  height: 100%; }
+
+.mobile-screen {
+  position: absolute;
+  top: 13%;
+  left: 16%;
+  /* width: 50.001%; */
+  height: 83%; }
+
+.page-main-inner {
+  margin-bottom: 2.5rem; }
 
 .main-content {
-  border: 1px solid #262626; }
+  border: 1px solid #262626;
+  position: relative; }
 
 .work-0.main-content,
-.work-0 .work-details-header {
+.work-0 .work-details-header,
+.work-4.main-content,
+.work-4 .work-details-header {
   background: #7CCE8E; }
 
-.work-0 .line {
+.work-0 .line,
+.work-4 .line {
   border-color: #7CCE8E; }
 
-.work-0 .website-link {
+.work-0 .website-link,
+.work-4 .website-link {
   color: #7CCE8E; }
 
 .work-1.main-content,
-.work-1 .work-details-header {
+.work-1 .work-details-header,
+.work-5.main-content,
+.work-5 .work-details-header {
   background: #574A86; }
 
-.work-1 .line {
+.work-1 .line,
+.work-5 .line {
   border-color: #574A86; }
 
-.work-1 .website-link {
+.work-1 .website-link,
+.work-5 .website-link {
   color: #574A86; }
 
 .work-2.main-content,
@@ -248,6 +270,15 @@ p {
   margin: auto;
   z-index: 2; }
 
+.desktop {
+  width: 100%; }
+
+.desktop-screen {
+  position: absolute;
+  width: 66%;
+  top: 13%;
+  left: 17%; }
+
 .technology-logos {
   display: flex;
   justify-content: space-between;
@@ -276,12 +307,12 @@ p {
 
 .content-work .btn-white {
   position: relative;
-  top: 4rem;
   margin-left: 2rem;
   z-index: 4; }
 
 .project-navigation {
   position: fixed;
+  z-index: 100;
   top: 50%;
   right: 10px;
   display: flex;
@@ -300,7 +331,7 @@ p {
     height: 80vh; }
   .contact .page-heading h1 {
     font-size: 5.7rem;
-    margin-top: -2rem; }
+    margin-top: 6rem; }
   .contact .page-heading h4 {
     display: flex;
     align-items: center;
@@ -318,9 +349,6 @@ p {
     font-size: 2.5rem; }
   .work-details-header {
     height: 370px; }
-  .mobile-display-right {
-    top: 150px;
-    right: 150px; }
   .top-nav {
     margin-bottom: 1.4rem; }
   .content-width {
@@ -330,14 +358,25 @@ p {
   .logo {
     width: 30%; } }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 840px) {
+  .work-item-heading {
+    background: none; }
   .back-button {
     display: static;
     position: fixed;
     font-size: 2.5rem;
     color: #262626; }
+  .page-heading {
+    top: 5rem; }
+  .content-work .btn-white {
+    top: 4rem; }
   .about-page-content {
     flex-direction: row; }
+  .mobile-screen {
+    left: 53%;
+    top: 10%;
+    /* width: 50.001%; */
+    height: 104%; }
   .right {
     padding-top: 9.3rem;
     width: 60%;
@@ -345,10 +384,12 @@ p {
     .right h1 {
       display: none; }
   .mobile-display-right {
-    top: 170px;
-    right: 150px; }
-  .work-page-heading h1 {
+    top: 6%;
+    right: 7%; }
+  .work-page-heading h1, .page-heading h1 {
     font-size: 4rem; }
+  .page-heading h4 {
+    font-size: 1.5rem; }
   .page-heading {
     width: 50%; } }
 
