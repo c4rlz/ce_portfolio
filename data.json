@@ -26,16 +26,17 @@
         "technology": [
           "react", "redux", "webpack", "sass", "html5"
         ],
+        "images": [ "boardbuddies-mobile.png", "boardbuddies.png" ],
         "details": [
           "This is a web application that connects individuals who are interested in playing board games, by enabling them to create and join board game events in their area. Our team of nine were all invested in making this idea a reality, as we felt that this was a need that our society was missing. As a member of the front-end developer team, I was tasked with creating an interface that was easy to use, efficient and reusable while in constant communication with the other members of the team."
         ],
         "role": [
-          "Give feedback on designs from a user experience perspective. Develop the front end of web application based on mockups created by UX designer. Refactor code to be adhearing to best practices."
+          "Give feedback on designs from a user experience perspective. Develop the front end of web application based on mockups created by UX designer. Refactor code to be adhearing to best practices. Contribute to github. "
         ],
         "functionality": [
           "Filter events based on location, date and keywords. Post to a comment section. Join events. Google map integration with React"
         ],
-        "url": "http://carlyewasiuk.com/et/index.php"
+        "url": "http://alpha.boardbuddiesapp.com/"
       },
       {
         "id": 1,
@@ -44,6 +45,7 @@
         "technology": [
           "css3", "php", "jquery", "html5"
         ],
+        "images": ["exotic-mobile.png", "exotic.png" ],
         "details": [
         "A school project website made for a mock typography studio. 48 hours to design and develop. Features a custom coded CMS. Fully responsive."
         ],
@@ -61,8 +63,9 @@
         "name": "Alexandra Hernandez",
         "description": "A portfolio website for a Game Artist",
         "technology": [
-          "webGL", "Unity", "JavaScript"
+          "Wordpress", "HTML5", "PHP"
         ],
+        "images": ["exotic-mobile.png", "exotic.png" ],
         "details": [
           "A school project website made for a mock typography studio. 48 hours to design and develop. Features a custom coded CMS. Fully responsive."
         ],
@@ -82,6 +85,7 @@
         "technology": [
           "JavaScript", "Wordpress", "Bootstrap4", "Sass", "PHP"
         ],
+        "images": [ "vanarts-radio-mobile.png", "vanarts-radio.png" ],
         "details": [
           " A website created for the Broadcasting & Online Media program at VanArts to promote their radio station that is hosted at Mixlr. This website began as a school project, where I was tasked with creating a custom CMS. \n The program was previously using a Wordpress site and was interested in getting this site imported to Wordpress, so I was tasked with learning how to import a custom theme into Wordpress. "
         ],
@@ -95,39 +99,42 @@
       },
       {
         "id": 4,
-        "name": "VanArts Radio",
-        "description": "A website created for the promotion of the VanArts radio station",
+        "name": "Boxspring Studio",
+        "description": "A mock design studio in New York City who specializes in graphic design for the restaurant and bar industry. ",
         "technology": [
           "JavaScript", "Wordpress", "Bootstrap4", "Sass", "PHP"
         ],
+        "images": ["boxspring-studios-mobile.png", "boxspring-studio.png" ],
+        
         "details": [
-          " A website created for the Broadcasting & Online Media program at VanArts to promote their radio station that is hosted at Mixlr. This website began as a school project, where I was tasked with creating a custom CMS. \n The program was previously using a Wordpress site and was interested in getting this site imported to Wordpress, so I was tasked with learning how to import a custom theme into Wordpress. "
+          "A website designed and developed for a graphic design studio in New York City. Their goal was to expand reach to outside of New York City into surrounding areas. "
         ],
         "role": [
-          "Research competitor radio stations in the local area. Design and develop website that adheres to client's goals."
+          "Meet with client, understand business goals and direction. Design wireframes and mockups based on business goals. Develop a fully responsive website. Created custom icons for services."
         ],
         "functionality": [
-          "Access to Mixlr radio station. Animations for loading. Customized backend. Refactor into wordpress theme."
+          "Custom photo slider. Estimate calculator.  Contact form. "
          ],
-        "url": "http://carlyewasiuk.com/vanarts_radio/"
+        "url": "http://carlyewasiuk.com/boxspring_studio/index.php"
       },
       {
         "id": 5,
-        "name": "VanArts Radio",
-        "description": "A website created for the promotion of the VanArts radio station",
+        "name": "Ediphotos",
+        "description": "24 Hour Design and Development Project ",
         "technology": [
-          "JavaScript", "Wordpress", "Bootstrap4", "Sass", "PHP"
+          "JavaScript", "HTML5", "Bootstrap4", "Sass", "PHP"
         ],
+        "images": [ "ediphotos-mobile.png", "ediphotos.png" ],
         "details": [
-          " A website created for the Broadcasting & Online Media program at VanArts to promote their radio station that is hosted at Mixlr. This website began as a school project, where I was tasked with creating a custom CMS. \n The program was previously using a Wordpress site and was interested in getting this site imported to Wordpress, so I was tasked with learning how to import a custom theme into Wordpress. "
+          "Ediphotos was a mock photography studio created as a client for a project I had to do in school, where I had 24 hours to design and develop a website. The website's requirements included the ability to upload new photos and remove photos. "
         ],
         "role": [
-          "Research competitor radio stations in the local area. Design and develop website that adheres to client's goals."
+          "Research competitors in the Toronto area. Design mockups. Develop based on my mockups.  "
         ],
         "functionality": [
-          "Access to Mixlr radio station. Animations for loading. Customized backend. Refactor into wordpress theme."
+          "Image upload, content updateable. "
          ],
-        "url": "http://carlyewasiuk.com/vanarts_radio/"
+        "url": "http://carlyewasiuk.com/ediphotos/"
       }
 
 
