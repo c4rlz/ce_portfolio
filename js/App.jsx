@@ -25,21 +25,21 @@ const App = ({ location }) => {
         >
           <section className="page-main-inner">
             <Switch location={location}>
-              <Route path="/" exact component={Landing} />
+              <Route exact path="/" component={Landing} />
               <Route
                 path="/about"
                 component={() => <About aboutData={data.about} />}
               />
               <Route
+                exact
                 path="/work"
                 component={() => <WorkLanding workData={data.works} />}
               />
 
               <Route
-                path="/work-details/:id"
+                path="/work/:id"
                 component={props => {
                   const selectedWork = data.works.find(
-                    // console.log(props.match.params.id, item.id)
                     item => parseInt(props.match.params.id, 10) === item.id
                   );
                   return <WorkDetails selectedWork={selectedWork} />;
