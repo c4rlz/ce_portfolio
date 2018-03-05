@@ -60,7 +60,7 @@
       },
       {
         "id": 2,
-        "name": "Alexandra Hernandez",
+        "name": "Alexandra Minues",
         "description": "A portfolio website for a Game Artist",
         "technology": [
           "Wordpress", "HTML5", "PHP"
@@ -70,12 +70,12 @@
           "A school project website made for a mock typography studio. 48 hours to design and develop. Features a custom coded CMS. Fully responsive."
         ],
         "role": [
-          "Design mockup that follows design direction of the client. Develop a pixel perfect custom theme in wordpress."
+          "Design mockup that follows design direction of the client. Develop a pixel perfect custom theme in wordpress. Set up hosting with AWS."
         ],
         "functionality": [
-         "A fully customizable site using Wordpress"
+         "A fully customizable site using Wordpress. Integrate Youtube video. Custom post types."
         ],
-        "url": "http://carlyewasiuk.com/ah"
+        "url": "http://aminues.com"
       },
 
       {
