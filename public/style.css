@@ -371,7 +371,7 @@ p {
   position: fixed;
   z-index: 100;
   top: 36%;
-  right: 40px;
+  right: 10%;
   display: flex;
   flex-direction: column; }
   .project-navigation i {
@@ -490,7 +490,9 @@ p {
   .right {
     padding-right: 2.5rem; }
   .mobile-screen {
-    left: 64%; }
+    left: 39%; }
+  .project-navigation {
+    right: 5%; }
   .home-hero {
     transform: scale(3) translateY(90%);
     text-align: right; }
@@ -505,6 +507,8 @@ p {
 @media screen and (min-width: 1200px) {
   .github, .linked-in {
     transform: scale(0.8); }
+  .mobile-screen {
+    left: 64%; }
   .linked-in {
     left: -100px;
     top: 20px;
