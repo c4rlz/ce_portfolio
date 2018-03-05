@@ -48,8 +48,8 @@ p {
   color: white;
   text-transform: uppercase; }
   .btn-white:hover {
-    background: rgba(38, 38, 38, 0.5);
-    color: white; }
+    background: rgba(248, 239, 239, 0.9);
+    color: #262626; }
   .btn-white.home {
     margin: 2rem; }
 
@@ -162,7 +162,7 @@ p {
 
 .page-main {
   position: absolute;
-  width: 96vw;
+  width: 99vw;
   top: 10px;
   height: 96vh; }
   .page-main .project-nav button {
@@ -215,6 +215,7 @@ p {
   font-family: "Muli", sans-serif;
   margin-bottom: 0.5rem;
   z-index: 100;
+  width: 95%;
   padding-right: 1%; }
   .top-nav li {
     list-style-type: none;
@@ -239,21 +240,6 @@ p {
     .nav-links a:hover {
       text-shadow: -2px 2px #5E9DBA;
       transform: scale(0.5); }
-
-.project-nav {
-  background: #262626;
-  height: 100px;
-  display: flex;
-  justify-content: center; }
-  .project-nav i {
-    color: #F8EFEF;
-    font-size: 2rem; }
-  .project-nav button {
-    border: none;
-    width: 50px;
-    padding-left: 5px;
-    outline: none;
-    background: none; }
 
 .mobile-display-right {
   height: 50%;
@@ -369,7 +355,7 @@ p {
 
 .progress-bar {
   background: #262626;
-  padding: 20px; }
+  padding: 3rem; }
 
 .back-button {
   display: none; }
@@ -381,25 +367,36 @@ p {
   z-index: 4; }
 
 .project-navigation {
+  transition: all 0.3s ease-in-out;
   position: fixed;
   z-index: 100;
-  top: 50%;
-  right: 10px;
+  top: 36%;
+  right: 40px;
   display: flex;
   flex-direction: column; }
   .project-navigation i {
-    color: #262626; }
+    color: #F8EFEF;
+    font-size: 2rem;
+    padding-bottom: 0.7rem; }
+    .project-navigation i:hover {
+      color: #262626; }
   .project-navigation button {
     border: none;
     width: 20px;
     outline: none;
     background: none; }
 
+.work-detail-svg {
+  z-index: -100; }
+
 .contact {
   background: #C660B5; }
   .contact.main-content {
     height: 97vh; }
+  .contact .page-heading {
+    display: inline-block; }
   .contact .page-heading h1 {
+    text-shadow: -2px 2px #5E9DBA;
     font-size: 5.7rem;
     margin-top: 6rem; }
   .contact .page-heading h4 {
@@ -409,9 +406,15 @@ p {
   .contact .fa-envelope {
     margin-right: 0.5rem; }
 
+.github, .linked-in {
+  display: inline-block;
+  width: 25%;
+  margin-left: 1rem; }
+  .github:hover, .linked-in:hover {
+    fill: #5E9DBA; }
+
 @media screen and (min-width: 414px) {
   #app {
-    padding: 1.4rem;
     background: #FFFFFF; }
   .page-heading {
     padding: 2rem; }
@@ -424,12 +427,22 @@ p {
   .content-width {
     width: 75%; }
   .contact .page-heading h1 {
-    font-size: 8.7rem; }
+    font-size: 7.6rem; }
   .logo {
     width: 30%;
     margin-left: 6%; } }
 
 @media screen and (min-width: 840px) {
+  .github {
+    display: inline-block;
+    width: 45%;
+    position: absolute;
+    top: 42%; }
+  .linked-in {
+    position: relative;
+    top: -64px; }
+  .nav-links a {
+    text-shadow: none; }
   .project-nav {
     justify-content: flex-start;
     padding-left: 1.2rem; }
@@ -488,3 +501,13 @@ p {
     display: none; }
   .nav-links a {
     color: #262626; } }
+
+@media screen and (min-width: 1200px) {
+  .github, .linked-in {
+    transform: scale(0.8); }
+  .linked-in {
+    left: -100px;
+    top: 20px;
+    width: 20%; }
+  .github {
+    top: 25%; } }

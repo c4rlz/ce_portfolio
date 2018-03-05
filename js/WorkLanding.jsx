@@ -95,7 +95,7 @@ class WorkLanding extends Component {
       <div>
         {this.renderWorkItem(workData, currentPage)}
 
-        {/* <ProgressBar page={currentPage} lastPageIndex={lastPageIndex} /> */}
+        <ProgressBar page={currentPage} lastPageIndex={lastPageIndex} />
         <ProjectNavigation
           currentPage={currentPage}
           workData={workData}

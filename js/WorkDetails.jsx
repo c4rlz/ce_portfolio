@@ -11,7 +11,7 @@ const WorkDetails = props => {
     <section className={`work-${selectedWork.id}`}>
       <svg
         preserveAspectRatio="xMinYMin meet"
-        className="svg-content"
+        className="svg-content work-detail-svg"
         viewBox="0 0 1900 1900"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"

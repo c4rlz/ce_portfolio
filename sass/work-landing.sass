@@ -131,7 +131,7 @@
 
 .progress-bar
   background: $black
-  padding: 20px
+  padding: 3rem
 
 .back-button
   display: none
@@ -145,17 +145,26 @@
 
 .project-navigation
   // width: 50px
+  transition: all 0.3s ease-in-out
   position: fixed
   z-index: 100
-  top: 50%
-  right: 10px
+  top: 36%
+  right: 40px;
   display: flex
   flex-direction: column
   i
-    color: $black
+    color: $light-pink
+    font-size: 2rem
+    padding-bottom: 0.7rem
+    &:hover
+      color: $black
   button
     border: none
     width: 20px
     outline: none
     background: none
   
+
+
+.work-detail-svg
+  z-index: -100
