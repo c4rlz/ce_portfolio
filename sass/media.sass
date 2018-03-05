@@ -1,6 +1,6 @@
 @media screen and (min-width: 414px)
   #app
-    padding: $small
+    // padding: $small
     background: $white
 
   .page-heading 
@@ -25,16 +25,27 @@
   
   .contact
     .page-heading h1
-      font-size: 8.7rem
+      font-size: 7.6rem
       
   .logo 
     width: 30%
     margin-left: 6%
 @media screen and (min-width: 840px)
 
+  .github
+    display: inline-block
+    width: 45%
+    position: absolute
+    top: 42%
+  .linked-in
+    position: relative;
+    top: -64px;
+  .nav-links a
+    text-shadow: none
   .project-nav
     justify-content: flex-start
     padding-left: 1.2rem
+
   .work-item-heading
     background: none
 
@@ -62,6 +73,7 @@
     // top: 19%
     /* width: 50.001%; */
     height: 94%
+
     
   .work-details-header
     height: 150px
@@ -118,7 +130,17 @@
     a 
       color: $black
 
-// @media screen and (min-width: 1440px)
+@media screen and (min-width: 1200px)
+  .github, .linked-in
+    transform: scale(0.8);
+
+  .linked-in
+    left: -100px
+    top: 20px;
+    width: 20%;
+  .github
+    top: 25%
+
 
 
 
