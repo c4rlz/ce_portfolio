@@ -13,13 +13,22 @@
   z-index: 10
   height: 100%
 
+  .page-heading
+     top: 5rem
+
 .mobile-screen
     position: absolute
     // left: 23%
-    top: 13%
-    left: 16%
+    // top: 13%
+    // left: 16%
+    // /* width: 50.001%; */
+    // height: 83%
+
+
+    top: 17%
+    left: 21%
     /* width: 50.001%; */
-    height: 83%
+    height: 79%
 
 .page-main-inner 
   margin-bottom: $medium
@@ -27,55 +36,51 @@
 .main-content
   border: 1px solid $black
   position: relative
-.work-0,
-.work-4
-  &.main-content,
-  .work-details-header
-    background: $green
-  .line 
-    border-color: $green
-  .website-link
-    color: $green
+  height: 84vh
+// .work-0,
+// .work-4
+//   &.main-content
+//     background: $green
+//   .line 
+//     border-color: $green
+//   .website-link
+//     color: $green
 
 .work-1,
 .work-5
-  &.main-content,
-  .work-details-header
+  &.main-content
     background: $purple
   .line 
     border-color: $purple
-  .website-link
+  .website-link, .work-page-heading
     color: $purple
 
-.work-2
-  &.main-content,
-  .work-details-header
+.work-2,
+.work-4
+
+  &.main-content
     background: $blue
   .line 
     border-color: $blue
-  .website-link
+  .website-link, .work-page-heading
     color: $blue
 
-.work-3
-  &.main-content,
-  .work-details-header
+.work-3, 
+.work-0
+  &.main-content
     background: $dusty-pink
   .line 
     border-color: $dusty-pink
-  .website-link
+  .website-link, .work-page-heading
     color: $dusty-pink
 
 .work-details-header 
-  position: absolute
-  top: 0
-  left: 0 
-  height: 250px
-  width: 100vw
+  height: 100px
 
 .work-page-heading
   position: relative
   z-index: 2
-  color: $white
+  // color: $white
   h1
     // font-size: 5rem
     margin-bottom: 1.8rem
@@ -126,7 +131,7 @@
 
 .progress-bar
   background: $black
-  padding: 10px
+  padding: 20px
 
 .back-button
   display: none
@@ -134,7 +139,7 @@
 .content-work 
   .btn-white
     position: relative
-    // top: 4rem
+    top: 5rem
     margin-left: 2rem 
     z-index: 4
 

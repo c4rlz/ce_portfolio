@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Heading = props => {
-  const { description, icon, subheading, heading } = props;
+const Heading = ({ heading, icon, description, subheading }) => {
+  // const { description, icon, subheading, heading } = props;
   const checkDescription = () => (description ? <p> {description} </p> : null);
 
   const checkIcon = () =>

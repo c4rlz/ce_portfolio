@@ -11,7 +11,7 @@
       font-size: $medium
 
   .work-details-header
-    height: 370px
+    height: 100px
 
   // .mobile-display-right 
   //   top: 150px
@@ -29,9 +29,12 @@
       
   .logo 
     width: 30%
+    margin-left: 6%
 @media screen and (min-width: 840px)
 
-
+  .project-nav
+    justify-content: flex-start
+    padding-left: 1.2rem
   .work-item-heading
     background: none
 
@@ -41,21 +44,27 @@
     font-size: $medium
     color: $black
 
-  .page-heading 
-    top: 5rem
+  .page-heading, .work-item-heading .page-heading
+    top: 10rem
 
   .content-work .btn-white
-    top: 4rem
+    top: 11rem
 
   .about-page-content
     flex-direction: row
+    height: 98vh
 
   .mobile-screen 
-    left: 53%
-    top: 10%
+    left: 54%
+    top: 15%
     /* width: 50.001%; */
-    height: 104%
+    // height: 104%
+    // top: 19%
+    /* width: 50.001%; */
+    height: 94%
     
+  .work-details-header
+    height: 150px
 
   .right
     padding-top: 9.3rem
@@ -88,6 +97,26 @@
     padding: $medium
   .right
     padding-right: $medium
+
+  .mobile-screen 
+    left: 64%
+
+  .home-hero
+    transform: scale(3) translateY(90%)
+    // left: 20%
+    text-align: right
+    h1, h4
+      color: $light-pink
+      text-shadow: 1px 1px rgba($dusty-pink, 0.8);
+    // top: 20%
+
+  
+  .svg-content 
+    display: none
+
+  .nav-links
+    a 
+      color: $black
 
 // @media screen and (min-width: 1440px)
 
