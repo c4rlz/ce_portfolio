@@ -1,10 +1,15 @@
 .top-nav 
   display: flex
-  font-family: $body
+  position: relative
+  font-family: $heading
   margin-bottom: $x-small
+  z-index: 100
+  padding-right: 1%
+
   li
     list-style-type: none
     padding: $x-small
+
 
 
 #logo 
@@ -20,4 +25,31 @@
   align-items: center
   a
     text-decoration: none
-    color: $black
+    color: $light-pink
+    text-shadow: -2px 2px $purple
+    text-transform: uppercase
+    font-size: 0.9rem
+    transition: all 0.2s
+    &:hover
+      text-shadow: -2px 2px $blue
+      transform: scale(0.5);
+
+
+
+.project-nav
+  background: $black
+  height: 100px
+  display: flex
+  justify-content: center;
+
+  // position: absolute
+  i
+    color: $light-pink
+    font-size: 2rem
+  button
+    border: none
+    width: 50px
+    padding-left: 5px
+    outline: none
+    background: none
+  

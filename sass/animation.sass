@@ -1,15 +1,58 @@
 .fade-appear,
 .fade-enter 
   opacity: 0;
+  transform: translateY(-50px)
 
 .fade-appear-active,
 .fade-enter-active 
-  transition: opacity .3s linear;
-  opacity: 1;
+  transition: opacity .5s linear, transform .5 ease-in-out
+  opacity: 1
+  transform: translateY(0)
 
 .fade-exit 
-  transition: opacity .2s linear;
-  opacity: 1;
+  transition: opacity .5s linear, transform .5 ease-in-out
+  opacity: 0
+  transform: translateY(200);
 
-.fade-exit-active 
-  opacity: 0;
+// .fade-exit-active 
+//   opacity: 0;
+//   transform: translateY(-50px)
+
+    
+  
+// .animateS-appear,
+// .animateS-enter 
+//   opacity: 0
+//   transform: translateX(-200px)
+
+// .animateS-appear-active,
+// .animateS-enter-active 
+//   transition: all .1s ease-in-out
+//   animation: slide 1s forwards;
+
+// .animateS-exit 
+//   transition: all .1s ease-in-out;
+//   transform: translateX(0)
+
+// .animateS-exit-active 
+//   opacity: 0
+//   transform: translateX(-200px)
+
+// // .svg-text
+// //   transform: scale(1.1);
+// //   animation: scaleIt 1s 2s 
+
+  
+  
+@keyframes slide
+    from 
+      // transform: scale(0)
+      opacity: 0
+      transform: translateX(-200px)
+
+    to
+      // transform: scale(2)
+      opacity: 1
+      transform: translateX(0)
+
+  
