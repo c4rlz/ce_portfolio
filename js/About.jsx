@@ -9,19 +9,19 @@ const About = ({ aboutData }) => {
           <h1> Skills </h1>
           <SkillDescription
             title={<hr />}
-            description="Javascript, React, Webpack, HTML5, SASS, Bootstrap"
+            description="Javascript, React, Webpack, Redux, HTML5, SASS, Bootstrap"
           />
           <SkillDescription
             title={<hr />}
-            description="Node.js, PHP, MySQL, Wordpress"
+            description="Node.js, PHP, MySQL, Wordpress, Express, Digital Ocean, AWS"
           />
           <SkillDescription
             title={<hr />}
-            description="UX & UI Design, Typography, Fluid Design, Print Media"
+            description="UX & UI Design, Typography, Fluid Design, Print Media, Adobe Creative Suite"
           />
           <div className="btn-container">
             <a
-              href="https://drive.google.com/file/d/1oRmpsCeApCrCArzsuB_oxTocrw6WQFwQ/view?usp=sharing"
+              href="https://drive.google.com/file/d/1t1hILjTqx_zIA-i8AbzwNXLegfaAck5A/view?usp=sharing"
               className="btn-white"
             >
               <span className="btn-interior" /> View Resume
