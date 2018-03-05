@@ -17,7 +17,7 @@ const ProjectNavigation = props => {
   };
 
   return (
-    <div className="project-navigation">
+    <div className="project-nav">
       {createNavigation(currentPage, workData)}
       {/* <ProjectNavItem url={workData.id} /> */}
     </div>

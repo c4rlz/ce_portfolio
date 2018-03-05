@@ -10,9 +10,12 @@ import WorkLanding from './WorkLanding';
 import WorkDetails from './WorkDetails';
 import data from '../data.json';
 
+const FourOhFour = () => {
+  return <h1>404</h1>;
+};
 const App = ({ location }) => {
   const currentKey = location.pathname.split('/')[1] || '/';
-  const timeout = { enter: 300, exit: 200 };
+  const timeout = { enter: 1000, exit: 200 };
 
   return (
     <Layout>
@@ -21,7 +24,7 @@ const App = ({ location }) => {
           key={currentKey}
           timeout={timeout}
           classNames="fade"
-          appear
+          // appear
         >
           <section className="page-main-inner">
             <Switch location={location}>
@@ -46,6 +49,7 @@ const App = ({ location }) => {
                 }}
               />
               <Route path="/contact" component={Contact} />
+              <Route component={FourOhFour} />
             </Switch>
           </section>
         </CSSTransition>

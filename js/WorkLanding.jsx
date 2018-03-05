@@ -5,6 +5,7 @@ import Heading from './Heading';
 import WorkItemMobile from './WorkItemMobile';
 import ProgressBar from './ProgressBar';
 import ProjectNavigation from './ProjectNavigation';
+import Fade from './TextTransition';
 
 class WorkLanding extends Component {
   constructor() {
@@ -93,12 +94,13 @@ class WorkLanding extends Component {
     return (
       <div>
         {this.renderWorkItem(workData, currentPage)}
+
+        {/* <ProgressBar page={currentPage} lastPageIndex={lastPageIndex} /> */}
         <ProjectNavigation
           currentPage={currentPage}
           workData={workData}
           navigateToComponent={this.navigateToComponent}
         />
-        <ProgressBar page={currentPage} lastPageIndex={lastPageIndex} />
       </div>
     );
   }

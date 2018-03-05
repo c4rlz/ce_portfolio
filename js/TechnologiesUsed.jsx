@@ -21,7 +21,7 @@ const TechnologiesUsed = props => {
   return (
     <div className="technology-section">
       <div className="line" />
-      <h4 className="uppercase">Technology</h4>
+      <h4 className="uppercase">Built With The Following Technologies</h4>
       {showTechnologies(props.technology)}
       <div className="line" />
     </div>
