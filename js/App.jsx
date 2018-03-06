@@ -42,6 +42,7 @@ const App = ({ location }) => {
               <Route
                 path="/work/:id"
                 component={props => {
+                  console.log('hi');
                   const selectedWork = data.works.find(
                     item => parseInt(props.match.params.id, 10) === item.id
                   );
