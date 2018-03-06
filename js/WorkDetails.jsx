@@ -7,6 +7,7 @@ import WebsiteLink from './WebsiteLink';
 
 const WorkDetails = props => {
   const { selectedWork } = props;
+  
   return (
     <section className={`work-${selectedWork.id}`}>
       <svg
