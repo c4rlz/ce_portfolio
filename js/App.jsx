@@ -46,7 +46,7 @@ const App = ({ location }) => {
                   const selectedWork = data.works.find(
                     item => parseInt(props.match.params.id, 10) === item.id
                   );
-                  console.log('work', selectedWork);
+                  console.log('worka', selectedWork);
                   return <WorkDetails selectedWork={selectedWork} />;
                 }}
               />
