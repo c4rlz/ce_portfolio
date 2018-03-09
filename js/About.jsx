@@ -1,11 +1,12 @@
 import React from 'react';
 import SkillDescription from './SkillDescription';
-const About = ({ aboutData }) => {
-  // const { aboutData } = props;
-  return (
-    <main className="about-page">
-      <section className="about-page-content">
-        <div className="split right">
+const About = (
+  { aboutData } // const { aboutData } = props;
+) => (
+  <main className="about-page">
+    <section className="about-page-content">
+      <div className="split right">
+        <div className="content">
           <h1> Skills </h1>
           <SkillDescription
             title={<hr />}
@@ -13,7 +14,7 @@ const About = ({ aboutData }) => {
           />
           <SkillDescription
             title={<hr />}
-            description="Node.js, PHP, MySQL, Wordpress, Express, Digital Ocean, AWS"
+            description="Node.js, PHP, MySQL, Wordpress, Digital Ocean, AWS"
           />
           <SkillDescription
             title={<hr />}
@@ -28,10 +29,13 @@ const About = ({ aboutData }) => {
             </a>
           </div>
         </div>
-        <div className="split left">
-
-          <h1> Hello there! </h1>
-          <h4> My name's Carly Ewasiuk </h4>
+      </div>
+      <div className="split left">
+        <div className="content">
+          <h1 className="uppercase"> Carly J. Ewasiuk </h1>
+          <h4>
+            Hello there, welcome to my site! This site is constantly under construction, as am I.
+          </h4>
           {aboutData.map(item => (
             <SkillDescription
               key={item.title}
@@ -40,11 +44,11 @@ const About = ({ aboutData }) => {
             />
           ))}
         </div>
+      </div>
 
-      </section>
+    </section>
 
-    </main>
-  );
-};
+  </main>
+);
 
 export default About;
