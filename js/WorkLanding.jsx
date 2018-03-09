@@ -72,16 +72,17 @@ class WorkLanding extends Component {
     return (
       <div className={`main-content content-work work-${work.id}`}>
         <section className="work-item-heading">
-          <Heading heading={work.name} subheading={work.description} />
-          <Link
-            // to={`/work-details/${i}`}
-            to={`/work/${i}`}
-            className="btn-white"
-            style={{ textDecoration: 'none' }}
-            key={work.id}
-          >
-            More Details
-          </Link>
+          <div className="content">
+            <Heading heading={work.name} subheading={work.description} />
+            <Link
+              to={`/work/${i}`}
+              className="btn-white"
+              style={{ textDecoration: 'none' }}
+              key={work.id}
+            >
+              More Details
+            </Link>
+          </div>
         </section>
         <WorkItemMobile title={work.name} screen={work.images[0]} />
       </div>
@@ -93,6 +94,7 @@ class WorkLanding extends Component {
 
     return (
       <div>
+
         {this.renderWorkItem(workData, currentPage)}
 
         <ProgressBar page={currentPage} lastPageIndex={lastPageIndex} />
