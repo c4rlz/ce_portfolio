@@ -10,9 +10,7 @@ import WorkLanding from './WorkLanding';
 import WorkDetails from './WorkDetails';
 import data from '../data.json';
 
-const FourOhFour = () => {
-  return <h1>404</h1>;
-};
+const FourOhFour = () => <h1>404</h1>;
 const App = ({ location }) => {
   const currentKey = location.pathname.split('/')[1] || '/';
   const timeout = { enter: 1000, exit: 200 };
@@ -42,11 +40,15 @@ const App = ({ location }) => {
               <Route
                 path="/work/:id"
                 component={props => {
-                  console.log('hi');
                   const selectedWork = data.works.find(
                     item => parseInt(props.match.params.id, 10) === item.id
                   );
-                  return <WorkDetails selectedWork={selectedWork} />;
+                  return (
+                    <WorkDetails
+                      selectedWork={selectedWork}
+                      numberOfWorks={data.works.length}
+                    />
+                  );
                 }}
               />
               <Route path="/contact" component={Contact} />

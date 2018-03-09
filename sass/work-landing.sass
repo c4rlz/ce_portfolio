@@ -18,33 +18,14 @@
 
 .mobile-screen
     position: absolute
-    // left: 23%
-    // top: 13%
-    // left: 16%
-    // /* width: 50.001%; */
-    // height: 83%
-
-
     top: 17%
-    left: 21%
-    /* width: 50.001%; */
+    left: 7%
     height: 79%
-
-.page-main-inner 
-  margin-bottom: $medium
 
 .main-content
   border: 1px solid $black
   position: relative
-  height: 84vh
-// .work-0,
-// .work-4
-//   &.main-content
-//     background: $green
-//   .line 
-//     border-color: $green
-//   .website-link
-//     color: $green
+  height: 90vh
 
 .work-1,
 .work-5
@@ -80,9 +61,7 @@
 .work-page-heading
   position: relative
   z-index: 2
-  // color: $white
   h1
-    // font-size: 5rem
     margin-bottom: 1.8rem
 
 .desktop-display 
@@ -98,13 +77,15 @@
 
 .desktop-screen 
     position: absolute
-    width: 66%
-    top: 13%
-    left: 17%
-
-// .laptop 
-//   background: url('../public/img/macbookpro.png');
-
+    opacity: 0
+    width: 65%
+    // top: 12.7%
+    top: 13.7%
+    left: 17.6%
+    transition: all .5s
+    &:hover
+      opacity: 1
+    
 .technology-logos
   display: flex
   justify-content: space-between
@@ -122,12 +103,7 @@
   text-transform: uppercase
   text-decoration: none
   background: $black
-  // border: 2px solid $black
   color: $white
-
-  // z-index: 20
-  // left: -100px
-  // left: -10%
 
 .progress-bar
   background: $black
@@ -144,7 +120,6 @@
     z-index: 4
 
 .project-navigation
-  // width: 50px
   transition: all 0.3s ease-in-out
   position: fixed
   z-index: 100
@@ -165,6 +140,49 @@
     background: none
   
 
+.triangle-svg 
+  position: absolute
 
-.work-detail-svg
-  z-index: -100
+.content-width
+  position: relative
+  z-index: 10
+
+// .work-description
+//   width: 40%
+//   display: inline-block
+
+.work-list
+  font-family: $body
+  list-style-image: url('../public/img/triangle-bullet.svg')
+  background-size: 20px
+
+  ul
+    li
+      margin-bottom: 0.5rem
+
+.project-view
+  position: absolute
+  width: 66%
+  top: 25%
+  left: 17%
+  text-align: center
+  // opacity: 0
+  color: white
+ 
+
+.desktop-screen:hover.project-view
+  color: black
+
+
+.bottom-navigation
+  width: 90%
+  display: flex
+  margin: auto
+  #previous, #next
+    padding: 1rem
+    font-family: $heading
+    @extend .uppercase
+    color: black
+    text-decoration: none
+  #previous
+    width: 100%

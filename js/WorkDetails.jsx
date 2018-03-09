@@ -4,20 +4,46 @@ import WorkItemDesktop from './WorkItemDesktop';
 import TechnologiesUsed from './TechnologiesUsed';
 import WorkDescription from './WorkDescription';
 import WebsiteLink from './WebsiteLink';
+import WorkList from './WorkList';
 
 const WorkDetails = props => {
-  const { selectedWork } = props;
-  
+  const { selectedWork, numberOfWorks } = props;
+  console.log(numberOfWorks);
+  const selectedColour = '#ACDDF3';
+  const { id: selected } = selectedWork;
+  console.log(selected - 1, selected + 1);
+  const previous = parseInt(selected - 1, 10) > -1
+    ? parseInt(selected - 1, 10)
+    : '/work';
+  const next = parseInt(selected + 1, 10) < numberOfWorks
+    ? parseInt(selected + 1, 10)
+    : '/contact';
+
+  const createProjectNavigation = () => {
+    console.log(previous, next);
+    return (
+      <div className="bottom-navigation">
+        <Link
+          id="previous"
+          to={isNaN(previous) ? previous : `/work/${previous}`}
+        >
+          {isNaN(previous) ? ' Back To Works ' : 'Previous '}
+        </Link>
+        <Link id="next" to={isNaN(next) ? next : `/work/${next}`}>
+          {isNaN(next) ? ' Contact' : 'Next '}
+        </Link>
+      </div>
+    );
+  };
+
   return (
     <section className={`work-${selectedWork.id}`}>
       <svg
-        preserveAspectRatio="xMinYMin meet"
-        className="svg-content work-detail-svg"
-        viewBox="0 0 1900 1900"
+        className="triangle-svg"
+        viewBox="0 0 1556 998"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
       >
-
         <g
           id="Page-1"
           stroke="none"
@@ -25,42 +51,12 @@ const WorkDetails = props => {
           fill="none"
           fillRule="evenodd"
         >
-          <g id="Desktop-HD">
-            <g id="Group-Copy" transform="translate(-0.843347, -4.000000)">
-              <polygon
-                id="Path-6"
-                fill="#5E9DBA"
-                points="1292.29288 870.55545 1995.45225 658.903271 1995.45225 0.773139831"
-              />
-              <polygon
-                id="Path-7"
-                fill="#574A86"
-                points="1995.45225 658.715136 1292.29288 870.588293 1994.33435 1060.00755"
-              />
-              {/* <text
-                  id="CARLY-EWASIUK"
-                  className="svg-text"
-                  // repeatCount="indefinite"
-                  fontFamily="JosefinSans-Bold, Josefin Sans"
-                  fontSize="90"
-                  fontWeight="bold"
-                  // opacity="0"
-                  fill="#FFF9F2"
-                >
-                  <tspan x="564.845664" y="461">CARLY EWASIUK</tspan>
-                </text>
-                <text
-                  id="FRONT-END-DEVELOPER"
-                  fontFamily="JosefinSans-Bold, Josefin Sans"
-                  className="svg-text"
-                  fontSize="40"
-                  // opacity="0"
-                  fontWeight="bold"
-                  fill="#FFF9F2"
-                >
-                  <tspan x="676.345664" y="522">FRONT END DEVELOPER </tspan>
-                </text> */}
-            </g>
+          <g
+            id="Desktop-HD-Copy"
+            transform="translate(-440.000000, 0.000000)"
+            fill={selectedColour}
+          >
+            <polygon id="Path-22" points="440.5 0 1996 997.5 1996 0" />
           </g>
         </g>
       </svg>
@@ -73,30 +69,35 @@ const WorkDetails = props => {
           <h1> {selectedWork.name} </h1>
         </div>
         <TechnologiesUsed technology={selectedWork.technology} />
-
-        <div>
-          <WorkItemDesktop
-            projectName={selectedWork.name}
-            screen={selectedWork.images[1]}
+        <section className="project-details">
+          <WorkDescription
+            title="Description"
+            description={selectedWork.details}
           />
-        </div>
-        <WorkDescription
-          title="Description"
-          description={selectedWork.details}
-        />
-        {/* <TechnologiesUsed technology={selectedWork.technology} />
-        <WorkDescription
-          title="Description"
-          description={selectedWork.details}
-        /> */}
-        <WorkDescription title="My Role" description={selectedWork.role} />
-        <WorkDescription
-          title="Functionality"
-          description={selectedWork.functionality}
-        />
+          <WorkList title="My Roles" items={selectedWork.role} />
+          {/* <WorkDescription title="My Role" description={selectedWork.role} /> */}
+          {/* <WorkDescription
+                title="Functionality"
+                description={selectedWork.functionality}
+              /> */}
 
-        <WebsiteLink link={selectedWork.url} />
+          <WorkList title="Functionality" items={selectedWork.functionality} />
+
+          {/* <WebsiteLink link={selectedWork.url} /> */}
+          <div>
+            <a href={selectedWork.url}>
+              <WorkItemDesktop
+                projectName={selectedWork.name}
+                screen={selectedWork.images[1]}
+              />
+            </a>
+          </div>
+        </section>
+
       </div>
+      {createProjectNavigation()}
+      {/* <Link to={`/work/${previous}`}>Previous</Link>
+      <Link to={`/work/${next}`}>Next </Link> */}
     </section>
   );
 };

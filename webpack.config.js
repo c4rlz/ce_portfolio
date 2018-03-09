@@ -31,7 +31,7 @@ module.exports = {
         test: /\.jsx?$/,
         loader: 'babel-loader'
       },
-      { test: /\.(png|jpg|jpeg)$/, loader: 'url-loader?limit=8192' },
+      { test: /\.(png|jpg|jpeg|svg)$/, loader: 'url-loader?limit=8192' },
       {
         test: /\.sass$/,
         use: ExtractTextPlugin.extract({
