@@ -8,10 +8,8 @@ import WorkList from './WorkList';
 
 const WorkDetails = props => {
   const { selectedWork, numberOfWorks } = props;
-  console.log(numberOfWorks);
   const selectedColour = '#ACDDF3';
   const { id: selected } = selectedWork;
-  console.log(selected - 1, selected + 1);
   const previous = parseInt(selected - 1, 10) > -1
     ? parseInt(selected - 1, 10)
     : '/work';
@@ -75,15 +73,8 @@ const WorkDetails = props => {
             description={selectedWork.details}
           />
           <WorkList title="My Roles" items={selectedWork.role} />
-          {/* <WorkDescription title="My Role" description={selectedWork.role} /> */}
-          {/* <WorkDescription
-                title="Functionality"
-                description={selectedWork.functionality}
-              /> */}
 
           <WorkList title="Functionality" items={selectedWork.functionality} />
-
-          {/* <WebsiteLink link={selectedWork.url} /> */}
           <div>
             <a href={selectedWork.url}>
               <WorkItemDesktop
@@ -96,8 +87,6 @@ const WorkDetails = props => {
 
       </div>
       {createProjectNavigation()}
-      {/* <Link to={`/work/${previous}`}>Previous</Link>
-      <Link to={`/work/${next}`}>Next </Link> */}
     </section>
   );
 };
