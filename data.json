@@ -2,11 +2,11 @@
   "about": [
     {
       "title": "Front-End",
-      "description": "I’m a front-end developer from Vancouver, B.C. My passion is JavaScript, and I’m constantly learning new front-end technologies that enable me to build web applications with efficiency and organization. The challenge of learning something new excites me."
+      "description": "I’m a goal oriented front-end developer from Vancouver, B.C. My passion is JavaScript, and I’m constantly learning new front-end technologies that enable me to build web applications with efficiency and organization. The challenge of learning something new excites me."
     },
     {
       "title": "Back-End",
-      "description": "I’m aquainted with back-end technologies, such as PHP, Laravel, MySQL. I have created custom CMS’s and CRUD applications. I am currently undertaking the learning of employing JavaScript for backend development."
+      "description": "I’m aquainted with back-end technologies, such as PHP, Laravel, MySQL. I have created custom CMS’s and CRUD applications. I am currently undertaking the learning of employing JavaScript for backend development using Node.js."
     },
     {
       "title": "Design",
@@ -28,13 +28,22 @@
         ],
         "images": [ "boardbuddies-mobile.png", "boardbuddies.png" ],
         "details": [
-          "This is a web application that connects individuals who are interested in playing board games, by enabling them to create and join board game events in their area. Our team of nine were all invested in making this idea a reality, as we felt that this was a need that our society was missing. As a member of the front-end developer team, I was tasked with creating an interface that was easy to use, efficient and reusable while in constant communication with the other members of the team."
+          "Board Buddies is a web application that connects individuals who are interested in playing board games, by enabling them to create and join board game events in their area. Our nine team members were all invested in making this idea a reality, as we felt that this was a need that our community lacked. As a member of the front-end development team, I was tasked with creating an interface that was easy to use, performant and reusable while maintaining constant communication with the other members of the team."
         ],
         "role": [
-          "Give feedback on designs from a user experience perspective. Develop the front end of web application based on mockups created by UX designer. Refactor code to be adhearing to best practices. Contribute to github. "
+          "Provide feedback on designs from a user experience perspective.", 
+          "Develop the front end of web application based on mockups created by UX designers.",
+          "Refactor code to be adhearing to best practices.",
+          "Communicate with back end developer to ensure functionality is done in an efficient manner",
+          "Use Agile Scrum Methodologies when developing",
+          "Contribute to github and communicate via slack"
         ],
         "functionality": [
-          "Filter events based on location, date and keywords. Post to a comment section. Join events. Google map integration with React"
+          "Filter events based on location, date and keywords.",
+          "Post to a comment section",
+          "Join events and leave events",
+          "Display differences in user states visually",
+          "Google map integration with React"
         ],
         "url": "http://alpha.boardbuddiesapp.com/"
       },
@@ -47,13 +56,19 @@
         ],
         "images": ["exotic-mobile.png", "exotic.png" ],
         "details": [
-        "A school project website made for a mock typography studio. 48 hours to design and develop. Features a custom coded CMS. Fully responsive."
+        "A mock typography studio based in China. This project was an assignment which, from introduction to deployment, I had 48 hours to complete. I was expected to research typography studios, create a design based on the client brief while considering other competitors in the area. Features a custom coded CMS with PHP. Fully responsive."
         ],
         "role": [
-          "Research the target market and competitors. Create wireframes and mockups to satisfy the company goals. Develop a responsive website that follows the mockups."
+          "Research the target market and competitors ",
+          "Create wireframes and mockups to satisfy the company goals",
+          "Develop a beautifully responsive website that follows the mockups",
+          "Develop backend which client can use to update content"
         ],
         "functionality": [
-          "Compare typography styles. Custom CMS made from scratch Image slider. Customized map."
+          "Compare typography styles",
+          "Custom CMS made from scratch",
+          "Custom coded image slider",
+          "Customize style of google map."
         ],
 
         "url": "http://carlyewasiuk.com/exotic/index.php"
@@ -67,13 +82,18 @@
         ],
         "images": ["exotic-mobile.png", "exotic.png" ],
         "details": [
-          "A school project website made for a mock typography studio. 48 hours to design and develop. Features a custom coded CMS. Fully responsive."
+          "A portfolio website created for an Environmemnt Artist to showcase her works and demo reel."
         ],
         "role": [
-          "Design mockup that follows design direction of the client. Develop a pixel perfect custom theme in wordpress. Set up hosting with AWS."
+          "Meet with client and discuss goals of website and design direction ",
+          "Design mockup that follows design direction of the client.",
+          "Develop a pixel perfect custom theme in wordpress.",
+          "Set up hosting with AWS."
         ],
         "functionality": [
-         "A fully customizable site using Wordpress. Integrate Youtube video. Custom post types."
+          "A fully customizable site using Wordpress",
+          "Integrate Youtube video",
+          "Custom post"
         ],
         "url": "http://aminues.com"
       },
@@ -90,10 +110,16 @@
           " A website created for the Broadcasting & Online Media program at VanArts to promote their radio station that is hosted at Mixlr. This website began as a school project, where I was tasked with creating a custom CMS. \n The program was previously using a Wordpress site and was interested in getting this site imported to Wordpress, so I was tasked with learning how to import a custom theme into Wordpress. "
         ],
         "role": [
-          "Research competitor radio stations in the local area. Design and develop website that adheres to client's goals."
+          "Research competitor radio stations in the local area",
+          "Design and develop website that adheres to client's goals",
+          "Convert into a wordpress theme"
         ],
         "functionality": [
-          "Access to Mixlr radio station. Animations for loading. Customized backend. Refactor into wordpress theme."
+          "Access to Mixlr radio station",
+          "Animations for loading", 
+          "Customized backend",
+          "Convert to wordpress theme"
+          
          ],
         "url": "http://carlyewasiuk.com/vanarts_radio/"
       },
@@ -110,10 +136,15 @@
           "A website designed and developed for a graphic design studio in New York City. Their goal was to expand reach to outside of New York City into surrounding areas. "
         ],
         "role": [
-          "Meet with client, understand business goals and direction. Design wireframes and mockups based on business goals. Develop a fully responsive website. Created custom icons for services."
+          "Meet with client, understand business goals and direction",
+          "Design wireframes and mockups based on business goals",
+          "Develop a fully responsive website",
+          "Create custom icons for services."
         ],
         "functionality": [
-          "Custom photo slider. Estimate calculator.  Contact form. "
+          "Custom photo slider",
+          "Estimate calculator that emails client",
+          "Contact form"
          ],
         "url": "http://carlyewasiuk.com/boxspring_studio/index.php"
       },
@@ -126,17 +157,20 @@
         ],
         "images": [ "ediphotos-mobile.png", "ediphotos.png" ],
         "details": [
-          "Ediphotos was a mock photography studio created as a client for a project I had to do in school, where I had 24 hours to design and develop a website. The website's requirements included the ability to upload new photos and remove photos. "
+          "Ediphotos was a mock photography studio in Toronto, who was looking to find new clients across the globe. This project had to be production ready in 24 hours. I had to research, design and develop a fully mobile responsive website with CMS integration to upload and remove photos. "
         ],
         "role": [
-          "Research competitors in the Toronto area. Design mockups. Develop based on my mockups.  "
+          "Research competitors in the Toronto area",
+          "Design mockups",
+          "Develop based on my mockups"
         ],
         "functionality": [
-          "Image upload, content updateable. "
+          "Image upload",
+          "Contact form ",
+          "Admin panel",
+          "Login"
          ],
         "url": "http://carlyewasiuk.com/ediphotos/"
       }
-
-
     ]
 }
