@@ -114,7 +114,6 @@ const Landing = () => {
 
         <div className="home-hero">
           <Fade heading="Carly Ewasiuk" subheading="Front-End Developer" />
-
         </div>
 
         <svg

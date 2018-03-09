@@ -2,7 +2,7 @@
   "scripts": {
     "api": "node ratingsAPI.js",
     "build": "webpack",
-    "dev": "webpack-dev-server",
+    "dev": "webpack-dev-server --watch",
     "format": "prettier --write --single-quote --print-width=120 --parser=flow --tab-width=2  \"js/**/*.{js,jsx}\"",
     "lint": "eslint **/*.{js,jsx} --quiet",
     "ssr": "NODE_ENV=server node server.js",
