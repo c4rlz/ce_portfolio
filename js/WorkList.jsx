@@ -2,7 +2,9 @@ import React from 'react';
 
 const WorkList = ({ title, items }) => {
   const createListItems = items => {
-    const listItems = items.map(item => <li> {item} </li>);
+    const listItems = items.map(item => (
+      <li key={items.indexOf(item)}> {item} </li>
+    ));
     return listItems;
   };
   return (
