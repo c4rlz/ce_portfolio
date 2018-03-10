@@ -17,7 +17,9 @@ const WorkDetails = props => {
     ? parseInt(selected + 1, 10)
     : '/contact';
 
-  const createProjectNavigation = () => (
+  const createProjectNavigation = () => {
+    console.log(previous, next);
+    return (
       <div className="bottom-navigation">
         <Link
           id="previous"
@@ -30,6 +32,7 @@ const WorkDetails = props => {
         </Link>
       </div>
     );
+  };
 
   return (
     <section className={`work-${selectedWork.id}`}>
