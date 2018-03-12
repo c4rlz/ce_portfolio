@@ -93,9 +93,10 @@
         "functionality": [
           "A fully customizable site using Wordpress",
           "Integrate Youtube video",
-          "Custom post"
+          "Custom post types",
+          "Custom PDF embed"
         ],
-        "url": "http://aminues.com"
+        "url": "http://www.aminues.com"
       },
 
       {
